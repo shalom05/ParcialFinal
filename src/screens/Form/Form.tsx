@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "./form.css";
+import "./Form.css";
 
 import PoemStepOne from "../../components/PoemStepOne/PoemStepOne";
 import PoemStepTwo from "../../components/PoemStepTwo/PoemStepTwo";
 import PoemStepThree from "../../components/PoemStepThree/PoemStepThree";
 
-const Form: React.FC = () => {
+export const Form: React.FC = () => {
   const [step, setStep] = useState(1);
 
   const handleStep1Next = () => {
@@ -33,4 +33,3 @@ const Form: React.FC = () => {
   );
 };
 
-export default Form;

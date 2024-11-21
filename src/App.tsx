@@ -1,9 +1,9 @@
 import "./App.css";
+import { Dashboard } from "./screens/Dashboard/Dashboard";
+import { Detail } from "./screens/Detail/Detail";
+import { Form } from "./screens/Form/Form";
 
-import Intro from "./screens/Intro/Intro";
-import Dashboard from "./screens/Dashboard/Dashboard";
-import Detail from "./screens/Detail/Detail";
-import Form from "./screens/Form/Form";
+
 
 const poems = [
   {
@@ -36,10 +36,10 @@ const examplePoem = {
 };
 
 function App() {
-  return <Form />;
+  return <Form></Form> ;
   // return <Detail poem={examplePoem} onBack={() => {}} />;
   // return <Dashboard poems={poems} onViewPoem={() => {}} />;
-  // return <Intro onNext={() => {}} />;
+  // return <Dashboard onNext={() => {}} />;
 }
 
 export default App;
